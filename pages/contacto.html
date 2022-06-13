@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- fila de logo + nav -->
+    <header id="contacto">
+        <nav class="menu">
+            <picture class="menu__logo animate__animated animate__backInLeft">
+                <a href="../index.html"> 
+                    <img src="../imagenes/logo.svg" alt="imagen del logo de la empresa">
+                </a>
+            </picture>
+            <ul class="menu__list animate__animated animate__backInRight">
+                <li class="menu__item">
+                    <a class="menu__link" href="../index.html">Nosotros</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./compras.html">Compras</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./alquileres.html">Alquileres</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- cierre de fila logo + nav --> 
+    <!-- inicio formulario de contacto --> 
+    <h1 class="title-contacto" >Envianos tu consulta</h1>
+    <form target="#" method="get" name="form-datos-personales">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+        <label for="apellidos">Apellido</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellido"/>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required />
+        <label for="asunto">Asunto</label>
+        <input type ="text" name="asunto" id="asunto" placeholder="Titular de la consulta"/>
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" for="mensaje" placeholder="dejanos tu consulta en menos de 300 carácteres" maxlength="300"></textarea>
+        <input type="submit" name="enviar" value="Enviar"/>
+    </form>
+    <footer class="footer">
+        <p class="footer__copy">Copyright ©</p>
+        <picture class="footer__contactos">
+           <p>Visitanos y contactanos en nuestras redes:</p>
+           <a href="https://es-la.facebook.com/"><img src="../imagenes/logofacebook.svg" alt="logo facebook"></a>
+           <a href="https://www.instagram.com/"><img src="../imagenes/logoinstagram.svg" alt="logo instagram"></a>
+           <a href="https://web.whatsapp.com/"><img src="../imagenes/logowhatsapp.svg" alt="logo whatsapp"></a>
+        </picture>
+    </footer> 
+
+</body>
+</html>
