@@ -1,0 +1,55 @@
+/* MISC */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Poppins;
+  background-image: linear-gradient(to left, #fff1eb 0%, #ace0f9 100%); }
+
+/* PARTIALS */
+header {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vw; }
+  header .navbar-toggler {
+    background-color: #f0d5b2; }
+  header #menu-navegacion .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    align-items: center; }
+  header #menu-navegacion .nav-link {
+    font-weight: 600;
+    font-size: 1.8em;
+    color: black;
+    background-color: #f0d5b2;
+    border: 1px solid #2b2b2b;
+    border-radius: 0.5em;
+    text-decoration: none;
+    padding: 0.5rem; }
+    header #menu-navegacion .nav-link:hover {
+      color: #2b2b2b;
+      background-color: white;
+      transition: background-color 2s; }
+
+.footer {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+  .footer__contactos {
+    display: flex;
+    align-items: center;
+    gap: 15px; }
+
+/* VIEWS */

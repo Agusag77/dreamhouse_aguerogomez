@@ -1,0 +1,16 @@
+.footer {
+    font-weight: 500;   
+    font-size: 1.5rem;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    &__contactos {
+        display: flex ;
+        align-items: center;
+        gap: 15px;
+    }
+}
+

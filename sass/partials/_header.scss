@@ -1,0 +1,37 @@
+header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vw;
+
+    .navbar-toggler {
+        background-color: #f0d5b2;
+    }
+
+    #menu-navegacion {
+
+        .navbar-nav {
+            display: flex;
+            list-style-type: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            font-size: 1.8em;
+            color: black;
+            background-color: #f0d5b2;
+            border: 1px solid #2b2b2b;
+            border-radius: 0.5em;
+            text-decoration: none;
+            padding: 0.5rem;
+
+            &:hover { 
+                color: #2b2b2b;
+                background-color: white;
+                transition: background-color 2s;
+            } 
+        }
+    }
+}
