@@ -1,0 +1,76 @@
+#compras {
+    background-image: url(../imagenes/sevende.jpg);
+}
+
+.title-compras {
+    @include titles; 
+}
+
+#forum-villa {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    column-gap: 2em;
+    row-gap: 2em; 
+
+    .forum-art {
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: justify;
+        width: 100%;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 20px solid rgba( 255, 255, 255, 0.18 ); 
+
+        &__title {
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-decoration: underline;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        &__list {
+            list-style: none; 
+        }
+       
+       span {
+            display: block;
+        }
+    }
+
+    .villa-art {
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: justify;
+        width: 100%;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 20px solid rgba( 255, 255, 255, 0.18 ); 
+
+        &__title {
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-decoration: underline;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        &__list {
+            list-style: none;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}

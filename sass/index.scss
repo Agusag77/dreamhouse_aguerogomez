@@ -1,6 +1,8 @@
 /* MISC */
 
 @import './misc/normalize';
+@import './misc/variables';
+@import './misc/mixins';
 
 /* PARTIALS */
 
@@ -14,4 +16,8 @@
 @import './views/compras';
 @import './views/alquileres';
 @import './views/contacto';
+
+/* MEDIA QUERIES */
+
+@import './misc/mediaqueries';
 

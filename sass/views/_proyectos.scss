@@ -1,0 +1,94 @@
+#proyectos {
+    background-image: url(../imagenes/proyectos.jpg);
+}
+
+.title-proyectos {
+   @include titles; 
+}
+
+#bull-naranjos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    column-gap: 2em;
+
+    .tower {
+        grid-column: 1/2;
+        grid-row: 1;
+        padding-bottom: 3em;
+
+        &__img {
+            width: 100%;
+            height: 90vh;
+            border-radius: 10%;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-decoration: underline;
+            text-align: center;
+            padding: 2rem;
+        }
+    } 
+
+    .tower-art {
+        grid-column: 2/2;
+        grid-row: 1/2;
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 0.8em;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 20px solid rgba( 255, 255, 255, 0.18 );
+
+        &__list {
+            list-style-type: none;
+            text-align: justify;
+        } 
+    }
+
+   .los-naranjos {
+    grid-column: 2/2;
+    grid-row: 2/2;
+
+        &__title {
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-decoration: underline;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        &__img {
+            width: 100%;
+            border-radius: 10%;
+        }
+    } 
+
+   .los-naranjos-art {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 20px solid rgba( 255, 255, 255, 0.18 );
+
+        &__list {
+            list-style-type: none;
+            text-align: justify;
+        }
+    }
+}

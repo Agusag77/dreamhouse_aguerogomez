@@ -1,0 +1,141 @@
+@media screen and (max-width: 830px) {
+
+    .navbar {
+         flex-direction: column;
+         margin: auto;
+         padding: 2rem;
+    }
+
+    .navbar-nav {
+         padding-top: 2em;
+    }
+
+    .menu-logo {
+         margin: auto;
+    }
+}
+
+@media screen and (max-width: 644px) {
+
+    #historia-trayectoria {
+         display: grid;
+         grid-template-columns: 2fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         align-items: center;
+         justify-items: center;
+         padding: 40px;
+         margin-top: 10px;
+
+        .historia__texto {
+            text-align: justify;
+            grid-row: 2;
+            width: 100%;
+        } 
+
+        .trayectoria__texto {
+            text-align: justify;
+            grid-row: 4;
+            width: 100%;
+        } 
+    }
+
+    #bull-naranjos {
+         display: grid;
+         grid-template-columns: 2fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         padding: 40px; 
+         
+        .tower__img {
+            height: auto;
+        } 
+         
+        .tower-art {
+            grid-column: 1;
+            grid-row: 2;
+        }
+   
+        .los-naranjos {
+            grid-column: 1;
+            grid-row: 3;
+        }
+       
+        .los-naranjos-art {
+            grid-column: 1;
+            grid-row: 4;
+        }
+    }
+
+    #forum-villa {
+         display: grid;
+         grid-template-columns: 2fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         padding: 40px;  
+        
+        .forum-art {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+
+        .villa-art {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+    }
+
+    #principado-acequias {
+         display: grid;
+         grid-template-columns: 2fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         padding: 40px;  
+
+        .principado-art {
+            grid-column: 1;
+            grid-row: 2; 
+        }
+   
+        .acequias {
+            grid-column: 1;
+            grid-row: 3; 
+        }
+   
+        .acequias-art {
+            grid-column: 1;
+            grid-row: 4; 
+        }
+    }
+
+    .footer {
+         flex-direction: column;
+
+         &__copy {
+            text-align: center;
+         }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .header-video-nosotros {
+         height: 80vw;
+    } 
+
+    #proyectos {
+         height: 0%;
+         background-size: 100vw;
+    }
+    
+    #compras {
+         height: 0%;
+         background-size: 100vw;
+    }
+
+    #alquileres {
+         height: 0%;
+         background-size: 100vw;
+    }
+
+    #contacto {
+         height: 0%;
+         background-size: 100vw;
+    }
+}

@@ -1,0 +1,71 @@
+#nosotros-header {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+}
+
+.header-video-nosotros {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+#historia-trayectoria {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    column-gap: 20px;
+
+    .historia__titulo {
+        font-weight: map-get($pesofuentes, fuente3);
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .historia__img {
+        width: 100%;
+        border-radius: 10%;
+    }
+
+    .historia__texto {
+        font-weight: map-get($pesofuentes, fuente1);
+        font-size: 1.5rem;
+        text-align: justify;
+        width: 100%;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 20px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    .trayectoria__titulo {
+        font-weight: map-get($pesofuentes, fuente3);
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: underline;
+        padding: 20px;
+    }
+    
+    .trayectoria__texto {
+        @extend .historia__texto;
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    
+    .trayectoria__img {
+        width: 100%;
+        border-radius: 10%;
+    }
+}
+
+
+
+
