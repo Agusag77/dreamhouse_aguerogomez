@@ -1,3 +1,23 @@
+@media screen and (max-width: 930px) {
+    #consulta {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        form {
+            grid-row: 1;
+        }
+    
+        .sucursales {
+            grid-row: 2;
+        }
+    
+        .mapa {
+            grid-row: 3;
+        }
+    } 
+}
+
 @media screen and (max-width: 830px) {
 
     .navbar {
@@ -110,6 +130,10 @@
          &__copy {
             text-align: center;
          }
+    }
+
+    form {
+        margin: 0;
     }
 }
 

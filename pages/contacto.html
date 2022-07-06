@@ -49,19 +49,42 @@
     <!-- cierre de fila logo + nav --> 
     <!-- inicio formulario de contacto --> 
     <h1 class="title-contacto" >Envianos tu consulta</h1>
-    <form target="#" method="get" name="form-datos-personales">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
-        <label for="apellidos">Apellido</label>
-        <input type="text" name="apellidos" id="apellidos" placeholder="Apellido"/>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" required />
-        <label for="asunto">Asunto</label>
-        <input type ="text" name="asunto" id="asunto" placeholder="Titular de la consulta"/>
-        <label for="mensaje">Mensaje</label>
-        <textarea name="mensaje" for="mensaje" placeholder="dejanos tu consulta en menos de 300 carácteres" maxlength="300"></textarea>
-        <input type="submit" name="enviar" value="Enviar"/>
-    </form>
+    <main id="consulta">
+        <form class="formulario" target="_self" method="get" name="form-datos-personales">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+            <label for="apellidos">Apellido</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellido"/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <label for="asunto">Asunto</label>
+            <input type ="text" name="asunto" id="asunto" placeholder="Titular de la consulta"/>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" for="mensaje" placeholder="dejanos tu consulta en menos de 300 carácteres" maxlength="300"></textarea>
+            <input type="submit" name="enviar" value="Enviar"/>
+        </form>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d821.0625937876835!2d-58.371196!3d-34.5978298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33534d1e8cfaf%3A0xc9402a0265c491d6!2sAlem%20Plaza!5e0!3m2!1ses-419!2sar!4v1656972818700!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="sucursales">
+            <h2 class="sucursales__title">Sucursales</h2>
+            <ul class="sucursales__oficinas">
+                <li>
+                    <h3 class="oficinas">Alem Plaza</h3>
+                    <h4 class="direccion">Av. Leandro N. Alem 855, Puerto Madero. 1001 CABA</h4>
+                    <p class="horario">Casa central - Horario de atención: Lunes a Viernes de 9 a 17hs</p>
+                </li>
+                <li>
+                    <h3 class="oficinas">Oficinas Rivera</h3>
+                    <h4 class="direccion">Ciudad Ribera, Puerto Norte. 2000 Rosario (Santa Fe)</h4>
+                    <p class="horario">Horario de atención: Lunes a Viernes de 9 a 17hs</p>
+                </li>
+                <li>
+                    <h3 class="oficinas">Olmos Center</h3>
+                    <h4 class="direccion">Blvd. San Juan 200. 5000 Córdoba</h4>
+                    <p class="horario">Horario de atención: Lunes a Viernes de 8 a 16hs</p>
+                </li> 
+            </ul>
+        </div>        
+    </main>
     <!-- inicio footer -->
     <footer class="footer">
         <p class="footer__copy">Copyright © by Agustin Aguero Gomez</p>
