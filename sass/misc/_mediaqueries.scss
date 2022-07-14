@@ -37,6 +37,8 @@
 
 @media screen and (max-width: 644px) {
 
+    /* Nosotros */
+
     #historia-trayectoria {
          display: grid;
          grid-template-columns: 2fr;
@@ -59,6 +61,8 @@
         } 
     }
 
+    /* Proyectos */
+
     #bull-naranjos {
          display: grid;
          grid-template-columns: 2fr;
@@ -77,30 +81,29 @@
         .los-naranjos {
             grid-column: 1;
             grid-row: 3;
+            padding-bottom: 0;
+
+            &__img {
+                height: 30vh;
+            }
         }
-       
+
         .los-naranjos-art {
             grid-column: 1;
             grid-row: 4;
         }
     }
 
+    /* Compras */
+
     #forum-villa {
          display: grid;
          grid-template-columns: 2fr;
          grid-template-rows: 1fr 1fr 1fr 1fr;
          padding: 40px;  
-        
-        .forum-art {
-            font-size: 1rem;
-            line-height: 2rem;
-        }
-
-        .villa-art {
-            font-size: 1rem;
-            line-height: 2rem;
-        }
     }
+
+    /* Alquileres */
 
     #principado-acequias {
          display: grid;
@@ -124,42 +127,57 @@
         }
     }
 
-    .footer {
-         flex-direction: column;
-
-         &__copy {
-            text-align: center;
-         }
-    }
+    /* Contacto */
 
     form {
         margin: 0;
+        width: 300px;
+        font-size: 12px;
+    }
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+
+        &__copy {
+            text-align: center;
+        }
     }
 }
 
 @media screen and (max-width: 576px) {
 
+    #historia-trayectoria {
+        grid-template-rows: 60rem 1fr 60rem 1fr;
+    }
+
     .header-video-nosotros {
-         height: 80vw;
+        height: 80vw;
     } 
 
     #proyectos {
-         height: 0%;
-         background-size: 100vw;
+        height: 0%;
+        background-size: 100vw;
+    }
+
+    .title-proyectos {
+        padding: 1.3rem;
+        margin: 0;
     }
     
     #compras {
-         height: 0%;
-         background-size: 100vw;
+        height: 0%;
+        background-size: 100vw;
     }
 
     #alquileres {
-         height: 0%;
-         background-size: 100vw;
+        height: 0%;
+        background-size: 100vw;
     }
 
     #contacto {
-         height: 0%;
-         background-size: 100vw;
+        height: 0%;
+        background-size: 100vw;
     }
 }

@@ -19,7 +19,8 @@ h3 {
   font-weight: 600; }
 
 h4 {
-  font-weight: 500; }
+  font-weight: 600;
+  text-decoration: underline; }
 
 /* VARIABLES */
 /* MAPS */
@@ -28,7 +29,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vw; }
+  height: 100vh; }
   header .navbar-toggler {
     background-color: #f0d5b2; }
   header #menu-navegacion .navbar-nav {
@@ -71,7 +72,7 @@ header {
 
 .header-video-nosotros {
   width: 100%;
-  height: 60vw;
+  height: 100vh;
   object-fit: cover;
   background-attachment: fixed; }
 
@@ -167,7 +168,8 @@ header {
       text-align: justify; }
   #bull-naranjos .los-naranjos {
     grid-column: 2/2;
-    grid-row: 2/2; }
+    grid-row: 2/2;
+    padding-bottom: 5rem; }
     #bull-naranjos .los-naranjos__title {
       font-weight: 600;
       font-size: 2.5rem;
@@ -214,7 +216,7 @@ header {
   column-gap: 2em;
   row-gap: 2em; }
   #forum-villa .forum-art {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     text-align: justify;
     width: 100%;
@@ -235,7 +237,7 @@ header {
     #forum-villa .forum-art span {
       display: block; }
   #forum-villa .villa-art {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     text-align: justify;
     width: 100%;
@@ -277,7 +279,7 @@ header {
   column-gap: 2em;
   row-gap: 2em; }
   #principado-acequias .principado-art {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     text-align: justify;
     width: 100%;
@@ -297,7 +299,7 @@ header {
       list-style-type: none;
       text-align: justify; }
   #principado-acequias .acequias-art {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     text-align: justify;
     width: 100%;
@@ -338,12 +340,13 @@ header {
   justify-items: center; }
 
 form {
-  width: 300px;
+  width: 360px;
   padding: 16px;
   border-radius: 10px;
   margin: auto;
   background-color: #ccc;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 14px; }
   form label {
     width: 72px;
     font-weight: bold;
@@ -380,7 +383,7 @@ form {
 
 .mapa {
   grid-column: 1/3;
-  width: 80%;
+  width: 100%;
   height: 85%;
   margin: 1em; }
 
@@ -402,7 +405,6 @@ form {
   .sucursales__oficinas {
     list-style-type: none; }
     .sucursales__oficinas .oficinas {
-      font-weight: 600;
       font-size: 1.8em; }
     .sucursales__oficinas .direccion {
       font-size: 1.6em; }
@@ -433,6 +435,7 @@ form {
     margin: auto; } }
 
 @media screen and (max-width: 644px) {
+  /* Nosotros */
   #historia-trayectoria {
     display: grid;
     grid-template-columns: 2fr;
@@ -449,6 +452,7 @@ form {
       text-align: justify;
       grid-row: 4;
       width: 100%; }
+  /* Proyectos */
   #bull-naranjos {
     display: grid;
     grid-template-columns: 2fr;
@@ -461,21 +465,20 @@ form {
       grid-row: 2; }
     #bull-naranjos .los-naranjos {
       grid-column: 1;
-      grid-row: 3; }
+      grid-row: 3;
+      padding-bottom: 0; }
+      #bull-naranjos .los-naranjos__img {
+        height: 30vh; }
     #bull-naranjos .los-naranjos-art {
       grid-column: 1;
       grid-row: 4; }
+  /* Compras */
   #forum-villa {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 40px; }
-    #forum-villa .forum-art {
-      font-size: 1rem;
-      line-height: 2rem; }
-    #forum-villa .villa-art {
-      font-size: 1rem;
-      line-height: 2rem; }
+  /* Alquileres */
   #principado-acequias {
     display: grid;
     grid-template-columns: 2fr;
@@ -490,19 +493,28 @@ form {
     #principado-acequias .acequias-art {
       grid-column: 1;
       grid-row: 4; }
+  /* Contacto */
+  form {
+    margin: 0;
+    width: 300px;
+    font-size: 12px; }
+  /* Footer */
   .footer {
     flex-direction: column; }
     .footer__copy {
-      text-align: center; }
-  form {
-    margin: 0; } }
+      text-align: center; } }
 
 @media screen and (max-width: 576px) {
+  #historia-trayectoria {
+    grid-template-rows: 60rem 1fr 60rem 1fr; }
   .header-video-nosotros {
     height: 80vw; }
   #proyectos {
     height: 0%;
     background-size: 100vw; }
+  .title-proyectos {
+    padding: 1.3rem;
+    margin: 0; }
   #compras {
     height: 0%;
     background-size: 100vw; }
